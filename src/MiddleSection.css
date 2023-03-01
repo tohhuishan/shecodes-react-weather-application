@@ -1,0 +1,53 @@
+.MiddleSection {
+  margin: 30px auto;
+  padding-left: 75px;
+}
+
+.MiddleSection .displayed-location-with-icon h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.MiddleSection .current-weather-and-temperature h2 {
+  font-size: 50px;
+}
+
+.MiddleSection .current-weather-icon {
+  min-width: 100px;
+  position: relative;
+  top: -20px;
+}
+
+.MiddleSection .current-temperature .temperature-units-conversion {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
+
+.MiddleSection .current-temperature .active {
+  color: rgb(0, 0, 0);
+  cursor: default;
+  text-decoration: none;
+}
+
+.MiddleSection .current-temperature .active:hover {
+  text-decoration: none;
+}
+
+.MiddleSection .right-side h3 {
+  font-size: 16px;
+}
+
+.MiddleSection .right-side .last-updated {
+  color: rgb(25, 25, 112);
+}
+
+.MiddleSection .current-day h3,
+.MiddleSection .current-date h3,
+.MiddleSection .current-time h3,
+.MiddleSection .current-humidity h3,
+.MiddleSection .current-wind h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
