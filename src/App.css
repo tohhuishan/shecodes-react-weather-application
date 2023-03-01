@@ -1,3 +1,19 @@
+.App {
+  font-family: "Permanent Marker", cursive;
+}
+
+.App .light {
+  background: linear-gradient(
+    180deg,
+    rgb(199, 231, 241) 0%,
+    rgb(103, 200, 234) 100%
+  );
+}
+
+.App .dark {
+  background: linear-gradient(180deg, rgb(12, 9, 86) 0%, rgb(15, 13, 94) 100%);
+}
+
 .App .card {
   border: 1px solid rgba(0, 80, 255, 0.35);
   margin: 50px auto;
