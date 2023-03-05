@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 
 import TopSection from "./TopSection";
@@ -24,15 +25,13 @@ export default function App() {
 
       <footer>
         <a
-          href="https://github.com/tohhuishan/shecodes-weather-application"
-          rel="noreferrer"
+          href="https://github.com/tohhuishan/shecodes-react-weather-application"
           target="_blank"
-          className="open-source-code"
+          rel="noreferrer"
         >
           Open-source code
-        </a>
-
-        <span className="developer-name"> by Toh Hui Shan </span>
+        </a>{" "}
+        by Toh Hui Shan
       </footer>
     </div>
   );
