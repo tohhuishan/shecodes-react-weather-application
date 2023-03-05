@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./TopSection.css";
+import "./Search.css";
 
-export default function Top() {
+export default function Search() {
   return (
-    <div className="TopSection search-city top-section">
+    <div className="Search search-city">
       <form action="submit" className="form-group row search-input-form">
         <div className="col-10">
           <input

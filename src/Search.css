@@ -1,13 +1,13 @@
-.TopSection .input-city {
+.Search .input-city {
   margin: 20px auto;
 }
 
-.TopSection .search-button {
+.Search .search-button {
   background: transparent;
   border: none;
   margin: 20px auto;
 }
 
-.TopSection .search-icon {
+.Search .search-icon {
   color: blue;
 }

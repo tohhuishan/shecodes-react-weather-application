@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import TopSection from "./TopSection";
+import Search from "./Search";
 import MiddleSection from "./MiddleSection";
 import BottomSection from "./BottomSection";
 import FindCurrentLocationSection from "./FindCurrentLocationSection";
@@ -12,7 +12,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <TopSection />
+            <Search />
 
             <MiddleSection />
 
