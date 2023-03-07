@@ -5,7 +5,7 @@ import "./Search.css";
 export default function Search() {
   return (
     <div className="Search search-city">
-      <form>
+      <form className="row">
         <div className="col-8">
           <input
             className="form-control input-city"

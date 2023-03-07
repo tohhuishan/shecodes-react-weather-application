@@ -1,5 +1,7 @@
 .App {
   font-family: "Permanent Marker", cursive;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .App .light {
