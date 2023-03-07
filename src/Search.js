@@ -5,8 +5,8 @@ import "./Search.css";
 export default function Search() {
   return (
     <div className="Search search-city">
-      <form action="submit" className="form-group row search-input-form">
-        <div className="col-10">
+      <form>
+        <div className="col-8">
           <input
             className="form-control input-city"
             type="text"
@@ -16,9 +16,12 @@ export default function Search() {
           />
         </div>
 
-        <div className="col-2">
-          <button className="form-control search-button" type="submit">
-            <i className="fa-solid fa-magnifying-glass search-icon"></i>
+        <div className="col-4">
+          <button
+            className="form-control search-button btn btn-primary w-100"
+            type="submit"
+          >
+            Search
           </button>
         </div>
       </form>

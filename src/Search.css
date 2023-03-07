@@ -1,13 +1,4 @@
-.Search .input-city {
-  margin: 20px auto;
-}
-
+.Search .input-city,
 .Search .search-button {
-  background: transparent;
-  border: none;
-  margin: 20px auto;
-}
-
-.Search .search-icon {
-  color: blue;
+  margin: 0 auto;
 }
