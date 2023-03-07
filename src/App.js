@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Search from "./Search";
-import MiddleSection from "./MiddleSection";
+import CurrentWeather from "./CurrentWeather";
 import BottomSection from "./BottomSection";
 import FindCurrentLocationSection from "./FindCurrentLocationSection";
 
@@ -14,7 +14,7 @@ export default function App() {
           <div className="card-body">
             <Search />
 
-            <MiddleSection />
+            <CurrentWeather />
 
             <BottomSection />
 
