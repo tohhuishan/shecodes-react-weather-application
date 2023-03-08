@@ -24,16 +24,6 @@
   top: -10px;
 }
 
-.CurrentWeather .current-temperature .active {
-  color: rgb(0, 0, 0);
-  cursor: default;
-  text-decoration: none;
-}
-
-.CurrentWeather .current-temperature .active:hover {
-  text-decoration: none;
-}
-
 .CurrentWeather .right-side h3 {
   font-size: 16px;
 }

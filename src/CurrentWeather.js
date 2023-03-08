@@ -1,4 +1,5 @@
 import React from "react";
+import CurrentTemperature from "./CurrentTemperature";
 import CurrentDateAndTime from "./CurrentDateAndTime";
 import "./CurrentWeather.css";
 
@@ -25,20 +26,9 @@ export default function CurrentWeather(props) {
           </div>
 
           <div className="col-md-6 current-temperature">
-            <h2>
-              <span className="temperature celsius">
-                {Math.round(props.data.temperature)}
-              </span>{" "}
-              <span className="temperature-units-conversion">
-                <a href="/" className="celsius-link active">
-                  °C
-                </a>
-                <span className="divider"> | </span>
-                <a href="/" className="fahrenheit-link">
-                  °F
-                </a>
-              </span>
-            </h2>
+            <CurrentTemperature
+              celsiusTemperature={Math.round(props.data.temperature)}
+            />
           </div>
         </div>
       </div>
