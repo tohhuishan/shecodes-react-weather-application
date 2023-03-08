@@ -41,7 +41,7 @@ export default function Search(props) {
   }
 
   let searchEngine = (
-    <div className="Search">
+    <div>
       <form className="row" onSubmit={handleSubmit}>
         <div className="col-8">
           <input
@@ -68,7 +68,7 @@ export default function Search(props) {
 
   if (currentWeatherData.ready) {
     return (
-      <div>
+      <div className="Search">
         {searchEngine}
         <CurrentWeather data={currentWeatherData} />
       </div>
@@ -77,7 +77,7 @@ export default function Search(props) {
     retrieveData();
 
     return (
-      <div>
+      <div className="Search">
         {searchEngine}
         <p>Retreiving weather data...</p>
       </div>

@@ -2,3 +2,10 @@
 .Search .search-button {
   margin: 0 auto;
 }
+
+.Search p {
+  display: block;
+  font-size: 52px;
+  margin-top: 20px;
+  text-align: center;
+}
