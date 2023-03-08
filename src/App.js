@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Search from "./Search";
-import BottomSection from "./BottomSection";
+import Forecast from "./Forecast";
 import FindCurrentLocationSection from "./FindCurrentLocationSection";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
           <div className="card-body">
             <Search defaultCity="Bangkok" />
 
-            <BottomSection />
+            <Forecast />
 
             <FindCurrentLocationSection />
           </div>
