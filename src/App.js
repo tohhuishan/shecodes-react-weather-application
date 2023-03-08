@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-
 import Search from "./Search";
-import CurrentWeather from "./CurrentWeather";
 import BottomSection from "./BottomSection";
 import FindCurrentLocationSection from "./FindCurrentLocationSection";
 
@@ -12,9 +10,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <Search />
-
-            <CurrentWeather />
+            <Search defaultCity="Bangkok" />
 
             <BottomSection />
 

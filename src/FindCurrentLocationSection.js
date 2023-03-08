@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./FindCurrentLocationSection.css";
 
 export default function FindCurrentLocationSection() {

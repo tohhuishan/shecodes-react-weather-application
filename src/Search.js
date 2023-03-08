@@ -1,18 +1,56 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
+import CurrentWeather from "./CurrentWeather";
 import "./Search.css";
 
-export default function Search() {
-  return (
-    <div className="Search search-city">
-      <form className="row">
+export default function Search(props) {
+  const [city, setCity] = useState(props.defaultCity);
+  const [currentWeatherData, setCurrentWeatherData] = useState({
+    ready: false,
+  });
+
+  function handleResponse(response) {
+    setCurrentWeatherData({
+      ready: true,
+      city: response.data.city,
+      country: response.data.country,
+      icon: response.data.condition.icon,
+      iconUrl: response.data.condition.icon_url,
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
+      date: new Date(response.data.time * 1000),
+    });
+  }
+
+  function retrieveData() {
+    const apiKey = "o65149f37004a818054t1c639bd4becf";
+    const units = "metric";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    retrieveData();
+  }
+
+  function handleChange(event) {
+    setCity(event.target.value);
+  }
+
+  let searchEngine = (
+    <div className="Search">
+      <form className="row" onSubmit={handleSubmit}>
         <div className="col-8">
           <input
             className="form-control input-city"
-            type="text"
+            type="search"
             placeholder="Search city..."
             autoComplete="off"
             autoFocus="on"
+            onChange={handleChange}
           />
         </div>
 
@@ -27,4 +65,22 @@ export default function Search() {
       </form>
     </div>
   );
+
+  if (currentWeatherData.ready) {
+    return (
+      <div>
+        {searchEngine}
+        <CurrentWeather data={currentWeatherData} />
+      </div>
+    );
+  } else {
+    retrieveData();
+
+    return (
+      <div>
+        {searchEngine}
+        <p>Retreiving weather data...</p>
+      </div>
+    );
+  }
 }

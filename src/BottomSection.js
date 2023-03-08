@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./BottomSection.css";
 
 export default function BottomSection() {
