@@ -4,21 +4,14 @@
   max-width: 800px;
 }
 
-.App .light {
+.App .card {
   background: linear-gradient(
     180deg,
     rgb(199, 231, 241) 0%,
     rgb(103, 200, 234) 100%
   );
-}
-
-.App .dark {
-  background: linear-gradient(180deg, rgb(12, 9, 86) 0%, rgb(15, 13, 94) 100%);
-}
-
-.App .card {
   border: 1px solid rgba(0, 80, 255, 0.35);
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   padding: 30px;
 }
 
@@ -27,22 +20,6 @@
 }
 
 .App footer {
-  margin: 40px auto;
+  margin: 30px auto 40px auto;
   text-align: center;
-}
-
-.App footer .open-source-code.light {
-  color: rgb(13, 110, 253);
-}
-
-.App footer .developer-name.light {
-  color: rgb(33, 37, 41);
-}
-
-.App footer .open-source-code.dark {
-  color: rgb(130, 171, 234);
-}
-
-.App footer .developer-name.dark {
-  color: rgb(255, 255, 255);
 }

@@ -3,10 +3,22 @@
   text-align: center;
 }
 
-.ForecastWeather .col-4 {
+.ForecastWeather .col-md-4 {
   margin-bottom: 10px;
 }
 
 .ForecastWeather .forecast-weather-icon {
   width: 50px;
+}
+
+@media (max-width: 768px) {
+  .ForecastWeather {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 464px) {
+  .ForecastWeather .col-md-4 {
+    margin-bottom: 16px;
+  }
 }

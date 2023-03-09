@@ -41,3 +41,28 @@
   margin-bottom: 0;
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .CurrentWeather {
+    padding: 0;
+    text-align: center;
+  }
+
+  .CurrentWeather .displayed-location-with-icon {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .CurrentWeather .current-weather-icon {
+    position: relative;
+    top: 0;
+  }
+
+  .CurrentWeather .current-weather-and-temperature h2 {
+    font-size: 36px;
+  }
+
+  .CurrentWeather .right-side {
+    margin-top: 20px;
+  }
+}

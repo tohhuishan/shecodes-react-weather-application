@@ -43,7 +43,7 @@ export default function Search(props) {
   let searchEngine = (
     <div>
       <form className="row" onSubmit={handleSubmit}>
-        <div className="col-8">
+        <div className="col-md-8">
           <input
             className="form-control input-city"
             type="search"
@@ -54,7 +54,7 @@ export default function Search(props) {
           />
         </div>
 
-        <div className="col-4">
+        <div className="col-md-4">
           <button
             className="form-control search-button btn btn-primary w-100"
             type="submit"
