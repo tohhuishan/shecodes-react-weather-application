@@ -8,7 +8,7 @@
 }
 
 .ForecastWeather .forecast-weather-icon {
-  min-width: 50px;
+  width: 50px;
 }
 
 .ForecastWeather .forecast-min-and-max-celsius-temperature,
