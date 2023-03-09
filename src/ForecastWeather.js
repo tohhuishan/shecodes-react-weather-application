@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DailyForecastWeather from "./DailyForecastWeather";
 import "./ForecastWeather.css";
@@ -7,6 +7,9 @@ export default function ForecastWeather(props) {
   const [forecastWeatherData, setForecastWeatherData] = useState({
     ready: false,
   });
+  useEffect(() => {
+    setForecastWeatherData({ ready: false });
+  }, [props.city]);
 
   function handleResponse(response) {
     setForecastWeatherData({
