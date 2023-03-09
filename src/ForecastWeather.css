@@ -4,15 +4,9 @@
 }
 
 .ForecastWeather .col-4 {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ForecastWeather .forecast-weather-icon {
   width: 50px;
-}
-
-.ForecastWeather .forecast-min-and-max-celsius-temperature,
-.ForecastWeather .forecast-min-and-max-fahrenheit-temperature {
-  padding: 0;
-  margin: 0 auto;
 }

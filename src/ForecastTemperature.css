@@ -1,0 +1,5 @@
+.ForecastTemperature .minimum-temperature,
+.ForecastTemperature .maximum-temperature {
+  display: inline-block;
+  padding: 0 4px;
+}

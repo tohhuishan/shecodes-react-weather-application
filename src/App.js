@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Search from "./Search";
-import FindCurrentLocationSection from "./FindCurrentLocationSection";
 
 export default function App() {
   return (
@@ -10,8 +9,6 @@ export default function App() {
         <div className="card">
           <div className="card-body">
             <Search defaultCity="Bangkok" />
-
-            <FindCurrentLocationSection />
           </div>
         </div>
       </div>
