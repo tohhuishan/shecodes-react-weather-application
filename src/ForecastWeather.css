@@ -1,39 +1,18 @@
-.Forecast {
-  margin: 20px auto;
+.ForecastWeather {
+  margin: 0 auto;
   text-align: center;
 }
 
-.Forecast .forecast-min-and-max-celsius-temperature,
-.Forecast .forecast-min-and-max-fahrenheit-temperature {
+.ForecastWeather .col-4 {
+  margin-bottom: 10px;
+}
+
+.ForecastWeather .forecast-weather-icon {
+  min-width: 50px;
+}
+
+.ForecastWeather .forecast-min-and-max-celsius-temperature,
+.ForecastWeather .forecast-min-and-max-fahrenheit-temperature {
   padding: 0;
   margin: 0 auto;
-}
-
-.Forecast .forecast-weather-0,
-.Forecast .forecast-weather-1,
-.Forecast .forecast-weather-2,
-.Forecast .forecast-weather-3,
-.Forecast .forecast-weather-4,
-.Forecast .forecast-weather-5 {
-  margin: 0 auto;
-}
-
-.Forecast .forecast-min-temperature-0,
-.Forecast .forecast-min-temperature-1,
-.Forecast .forecast-min-temperature-2,
-.Forecast .forecast-min-temperature-3,
-.Forecast .forecast-min-temperature-4,
-.Forecast .forecast-min-temperature-5 {
-  text-align: center;
-  padding: 0;
-}
-
-.Forecast .forecast-max-temperature-0,
-.Forecast .forecast-max-temperature-1,
-.Forecast .forecast-max-temperature-2,
-.Forecast .forecast-max-temperature-3,
-.Forecast .forecast-max-temperature-4,
-.Forecast .forecast-max-temperature-5 {
-  text-align: center;
-  padding: 0;
 }
